@@ -19,5 +19,11 @@
     <p>String length:<?php echo strlen($uncensored); ?></p>
 <!-- this is the uncensored paragraph's end -->
 
+<!-- this is the censored paragraph -->
+    <h2>This is the censored one:</h2>
+    <p> <?php echo $censored ?></p>
+    <p>String length: <?php echo strlen($censored) ?></p>
+<!-- this is the censored paragraph's end -->
+
 </body>
 </html>
