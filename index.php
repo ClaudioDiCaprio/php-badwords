@@ -1,6 +1,9 @@
 <?php
     $uncensored = 'She sells sea shells by the sea shore. The shells she sells are surely seashells. So if she sells shells on the seashore, I\'m sure she sells seashore shells.';
+    $censored = $uncensored;
+    if( isset($_GET['Badword']) ) {
     $censored = str_replace($_GET['Badword'],'***',$uncensored);
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en">
